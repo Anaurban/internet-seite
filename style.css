@@ -1,0 +1,150 @@
+     html{
+      scroll-behavior: smooth;
+     }
+     
+     body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+     } 
+
+     .header-image {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+     } 
+     
+     .container { 
+      position: absolute; 
+      right: 32px;
+      left: 32px;
+      top: 16px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     }
+
+     .menu-link {
+      color: whitesmoke;  
+      text-decoration: none;
+      margin-left: 16px;
+     }
+
+     .menu-link:hover{
+       text-decoration: underline; 
+     }
+
+     .headline{
+     position: absolute;
+     left: 50px;
+     top: 300px;
+     color:white;
+     font-size: 70px;
+     width: 500px;
+     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9)
+     }
+
+     .blueviolet{
+     color:rgb(184, 157, 210)   
+     }
+
+     .description-section{
+     padding: 50px 100px;
+     display: flex;
+     align-items:center;
+     justify-content: space-between;
+     gap: 50px;
+     margin-bottom: 100px;
+     }
+
+
+      .half-width{
+      width: 50%; 
+      }
+
+      h2{
+       text-align: center; 
+       font-size: 40px;
+       margin-bottom: 40px ;
+      }
+
+      .quarter-width{
+       width: 25%; 
+      }
+
+      .video-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+  gap: 50px;
+}
+
+ .half-width {
+  width: 50%;
+ }
+
+ .beauty-video {
+  width: 60%;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  object-fit: cover;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  object-fit: cover;
+  max-width: 700px;
+ }
+
+ .video-section p {
+  font-size: 18px;
+  line-height: 1.6;
+ }
+
+
+      @media (max-width: 750px ) {
+      .description-section{
+        flex-direction: column;
+        align-items: center;
+        height: unset;
+      }
+
+      .half-width{
+       width: unset; 
+      }
+
+      .video-section {
+       flex-direction: column;
+       padding: 20px;
+       gap: 30px;
+      }
+
+      .beauty-video {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+      }
+
+       .video-section p {
+      text-align: center;
+      font-size: 16px;
+      }
+
+       .navigation{
+      display: none;
+      }
+     }
+
+     .beauty-img {
+     width: 60%;
+     border-top-right-radius: 60px;
+     border-bottom-left-radius: 60px;
+     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+     object-fit: cover;
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+     }
+
+     .beauty-img:hover {
+     transform: scale(1.03);
+     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+     }
